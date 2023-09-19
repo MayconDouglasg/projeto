@@ -27,6 +27,7 @@
 }
 body {
   background: var(--br-url) no-repeat top center/cover;
+  height: 100%;
 }
 body * {
   font-family: "Inter", sans-serif;
@@ -145,4 +146,14 @@ footer {
   text-align: center;
   color: var(--subtitulo-color);
   font-size: 12px;
+}
+
+/* medias queries */
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(./assets/bg-desktop.jpg);
+  }
+  .light {
+    --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
 }
